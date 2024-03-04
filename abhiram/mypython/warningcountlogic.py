@@ -14,16 +14,13 @@ def count_warnings_in_file(file_path):
     return count
 
 def main():
-    print("Enter the path to the old build log file:")
-    logfile1 = input().strip('"')
-    print("Enter the path to the current build log file:")
-    logfile2 = input().strip('"')
-    
+    logfile1 = sys.argv[1]
+    logfile2 = sys.argv[2]    
     old_warnings = count_warnings_in_file(logfile1)
     new_warnings = count_warnings_in_file(logfile2)
     
     if new_warnings > old_warnings:
-        print("Buiild is Rejected")
+        print("Build is Rejected")
     else:
         print(" Build can be Promoted")
 
