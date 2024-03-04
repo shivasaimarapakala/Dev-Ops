@@ -10,12 +10,12 @@ count2 = 0
 for line in x1:
     if line.find("warning") != -1:
         count1 += 1
-x1.close
+x1.close()
 
 for line in x2:
     if line.find("warning") != -1:
         count2 += 1
-x2.close
+x2.close()
 
 print(f"** Old warning count =  {count1}")
 print(f"** New warning count =  {count2}")
