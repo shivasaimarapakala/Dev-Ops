@@ -1,5 +1,9 @@
-x1 = open("1log.txt")
-x2 = open("2log.txt")
+import sys
+
+
+
+x1 = open(sys.argv[1],"r")
+x2 = open(sys.argv[2],"r")
 count1 = 0
 count2 = 0
 
