@@ -12,9 +12,9 @@ file.close()
 print(json.dumps(json_obj,sort_keys=True,indent=4))
 # print(json_obj.keys())
 
-# print(json_obj["Id"][:12])
+# print(json_obj["Identity"][:12])
 
-Id = json_obj["Id"][:12]
+Identity = json_obj["Identity"][:12]
 
 image = json_obj['Image']
 
@@ -32,7 +32,7 @@ Ports = json_obj['NetworkSettings']['Ports']
 
 names = json_obj['Name']
 
-print(f' ID         : {Id}')
+print(f' ID         : {Identity}')
 print(f' Image      : {image}')
 print(f' Command    : {command}')
 print(f' Created    : {created}')
