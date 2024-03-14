@@ -1,4 +1,5 @@
 import sys
+#Checking if the Child branch is working properly to me
 
 def count_warnings_in_file(file_path):
     # Open file with 'r' mode
